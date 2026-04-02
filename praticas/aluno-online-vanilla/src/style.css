@@ -144,6 +144,123 @@ main {
   gap: 0.25rem;
 }
 
+/* ── Login Page ── */
+
+.login-page {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.login-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  padding: 2rem;
+}
+
+.login-container {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.login-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.login-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.login-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--cor-texto);
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+#login-form label {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--cor-texto);
+  margin-top: 0.75rem;
+}
+
+#login-form label:first-of-type {
+  margin-top: 0;
+}
+
+#login-form input {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: var(--cor-texto);
+  transition: border-color 0.2s;
+}
+
+#login-form input:focus {
+  outline: none;
+  border-color: #888;
+}
+
+#login-form input.invalido {
+  border-color: #c0392b;
+}
+
+.erro {
+  font-size: 0.8rem;
+  color: #c0392b;
+  min-height: 1.1em;
+}
+
+#login-form button[type="submit"] {
+  margin-top: 1.25rem;
+  padding: 0.7rem;
+  background-color: #e8e8e8;
+  color: var(--cor-texto);
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#login-form button[type="submit"]:hover {
+  background-color: #d8d8d8;
+}
+
+.login-footer {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--cor-texto);
+  opacity: 0.5;
+}
+
 /* ── Responsivo (mobile < 768px) ── */
 
 @media (width < 768px) {
