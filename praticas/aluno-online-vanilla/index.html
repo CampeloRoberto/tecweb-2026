@@ -6,6 +6,9 @@
   <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aluno Online</title>
+
+  <link rel="stylesheet" href="src/style.css">
+
 </head>
 
 <body>
@@ -13,13 +16,13 @@
   <aside>
 
     <header>
+      <span class="logo-icon">🎓</span>
       <h1>Aluno Online</h1>
     </header>
 
     <nav aria-label="Menu principal">
       <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Disciplinas</a></li>
+        <li><a href="#">Dashboard</a></li>
         <li><a href="#">Notas</a></li>
         <li><a href="#">Faltas</a></li>
         <li><a href="#">Boletos</a></li>
@@ -32,13 +35,19 @@
 
   <main>
 
-    <section>
-      <h2>Bem-vindo ao Portal do Aluno</h2>
-    </section>
+    <div class="topbar">
+      <div class="topbar-greeting">
+        <h2>Olá, Aluno!</h2>
+        <p>Bem-vindo ao portal do aluno</p>
+      </div>
+      <div class="avatar">
+        <img src="/avatar.png" alt="Avatar do aluno" />
+      </div>
+    </div>
 
-    <section>
+    <div class="content">
 
-      <article>
+      <article class="card">
         <h3>Mural de Avisos</h3>
         <ul>
           <li>Inscrição para o projeto de extensão</li>
@@ -46,7 +55,7 @@
         </ul>
       </article>
 
-      <article>
+      <article class="card">
         <h3>Calendário Acadêmico</h3>
         <ul>
           <li>23/02 - Início do período letivo 2026-1</li>
@@ -56,16 +65,16 @@
         </ul>
       </article>
 
-      <article>
+      <article class="card">
         <h3>Minhas Disciplinas</h3>
         <ul>
-          <li>Bancos de Dados I (HMDC253)</li>
-          <li>Estrutura de Dados (MDC127)</li>
-          <li>Tecnologias Web (HMDC251)</li>
+          <li>Bancos de Dados I</li>
+          <li>Estrutura de Dados</li>
+          <li>Tecnologias Web</li>
         </ul>
       </article>
 
-    </section>
+    </div>
 
   </main>
 
