@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/graduation.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Aluno Online</title>
+
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body class="login-page">
+
+  <main class="login-main">
+
+    <section class="login-container">
+
+      <header class="login-header">
+        <img src="/graduation.svg" alt="Ícone de formatura" class="login-icon" />
+        <h1>Aluno Online</h1>
+      </header>
+
+      <form id="login-form" novalidate>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" autocomplete="email" />
+        <p class="erro" id="erro-email" aria-live="polite"></p>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" autocomplete="current-password" />
+        <p class="erro" id="erro-senha" aria-live="polite"></p>
+
+        <button type="submit">Entrar</button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer class="login-footer">
+    <p>&copy; 2026 Aluno Online. Todos os direitos reservados.</p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+
+</body>
+
+</html>
