@@ -1,0 +1,17 @@
+{
+  "produtos": [
+    {
+      "nome": "banana",
+      "preço": 10,
+      "estoque": 1000,
+      "id": "Rc6oLvURURM"
+    },
+    {
+      "nome": "laranja ",
+      "preço": 15,
+      "estoque": 1000,
+      "id": "7A2jU425ECY"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
